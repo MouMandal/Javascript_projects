@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #3c3c3c;
+        }
+
+        .first_container {
+            background-color: #9cbab4;
+            height: 38px;
+            width: 250px;
+            border-radius: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 40vh;
+            position: relative;
+            overflow: auto;
+        }
+
+        .second_container {
+            width: 50%;
+            height: 100%;
+            background-color: #009575;
+
+
+
+        }
+
+        .third_container {
+            position: absolute;
+            top: 10px;
+            right: 5px;
+
+        }
+
+        button {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 40px;
+            height: 30px;
+            width: 80px;
+            border: none;
+            background-color: #009575;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first_container">
+        <div class="second_container"></div>
+        <div class="third_container"></div>
+    </div>
+    <button class="fourth_container">click me</button>
+    
+
+
+    <script>
+        let first_container = document.querySelector(".first_container");
+        let second_container = document.querySelector(".second_container");
+        let third_container = document.querySelector(".third_container");
+        let fourth_container=document.querySelector(".fourth_container");
+
+        const upDate = (Progressbar, element) => {
+            Progressbar.querySelector(".second_container").style.width = `${element}%`;
+            Progressbar.querySelector(".third_container").textContent = `${element}%`;
+            fourth_container.addEventListener('click',()=>{
+                
+            })
+
+
+        }
+
+    </script>
+</body>
+
+</html>
