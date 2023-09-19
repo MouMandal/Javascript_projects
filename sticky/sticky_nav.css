@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000d0;
+    max-width: 100vw;
+    min-height: 100vh;
+
+    /* DEFAULT FONT */
+    font-weight: bolder;
+    font-family: cursive;
+}
+
+section {
+    object-fit: fill;
+}
+
+section img {
+    width: 100vw;
+    object-fit: fill;
+    height: auto;
+}
+
+header {
+    color: wheat;
+    height: 50px;
+    width: 100vw;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-content: center;
+    grid-gap: 5px;
+    z-index: 2;
+    position: fixed;
+    transition: all 0.6s;
+
+    /* FONT STYLE FOR HEADER ELEMENT */
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+header.sticky {
+    background-color: #5d5d5d;
+}
+
+header .logo {
+    color: wheat;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header .logo:hover {
+    color: #00ff88;
+}
+
+header ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+}
+
+header ul li {
+    list-style-type: none;
+    transition: 0.5s;
+    cursor: pointer;
+    padding: 0px 5px;
+    text-align: center;
+}
+
+header ul li:hover {
+    background-color: #003c3c;
+}
+
+h2,
+h3 {
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-weight: bolder;
+    font-family: cursive;
+    color: #fff;
+    padding: 5px;
+}
+
+p {
+    color: #858585;
+    line-height: 25px;
+    letter-spacing: 1.2px;
+    padding: 5px;
+    text-align: justify;
+}
+
+footer {
+    text-align: center;
+}
+
+@media only screen and (max-width: 720px) {
+    header {
+        /* FONT STYLE FOR HEADER ELEMENT */
+        font-size: 20px;
+    }
+
+    h2,
+    h3 {
+        margin-top: 10px;
+        margin-bottom: 2px;
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 18px;
+        letter-spacing: 1.1px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header {
+        /* FONT STYLE FOR HEADER ELEMENT */
+        font-size: 16px;
+    }
+
+    h2,
+    h3 {
+        margin-top: 10px;
+        margin-bottom: 2px;
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+}
