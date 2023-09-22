@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    background-image: linear-gradient(#f44336, #730228);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 220px;
+    width: 250px;
+    max-width: 100%;
+    background-color: #730228;
+    border-radius: 14px;
+    box-shadow: 5px 5px 5px 5px black;
+
+}
+
+.num {
+
+    padding: 20px 12px;
+
+}
+
+.num h3 {
+    margin-top: 10px;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.input-box {
+
+    border-bottom: 2px solid;
+
+}
+
+.input-box input {
+
+    border: none;
+    outline: none;
+    background: transparent;
+    color: rgba(245, 222, 179, 0.526);
+    cursor: pointer;
+}
+
+.input-box img {
+    width: 34px;
+    cursor: pointer;
+}
+
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.btn button {
+    width: 90px;
+    border-radius: 24px;
+    padding: 7px 8px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    background-color: #730228;
+    font-size: 15px;
+    font-weight: bolder;
+
+
+}
+
+.btn a {
+    text-decoration: none;
+    color: black;
+
+}
+
+button:hover {
+    background-color: #fff;
+}
