@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    background-color: #328F9B;
+    height: 70px;
+    width: 100vw;
+
+}
+
+.container ul {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    text-transform: uppercase;
+
+
+}
+
+.container ul li {
+    padding: 12px 30px;
+    list-style-type: none;
+}
+
+.container ul li:hover {
+    color: white;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 700px;
+}
+
+input {
+    padding: 12px 25px;
+    width: 185px;
+    border-radius: 45px;
+    font-size: 15px;
+    border: none;
+    outline: 0;
+    background-color: rgba(144, 238, 144, 0.462);
+
+
+
+
+
+}
+
+input#search {
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+.page {
+    display: flex;
+}
+
+.page .first {
+    /* background-color: red; */
+    height: 80vh;
+    width: calc(100vw - 500px)
+}
+
+.first img {
+    height: 80vh;
+    width: calc(100vw - 500px)
+}
+
+.page .second {
+    background-color: #328f9b42;
+    height: 80vh;
+    width: 500px;
+}
+
+.second h1 {
+    padding: 15px 100px;
+    margin-top: 180px;
+}
+
+footer {
+
+
+    padding-top: 20px;
+    bottom: 0;
+    height: 55px;
+    width: 100vw;
+    background-color: aliceblue;
+}
+
+footer h5 {
+
+    text-align: center;
+}
+
+@media only screen and (max-width:460px) {
+    .inputs {
+        padding-left: 0px;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .inputs {
+        display: none;
+    }
+    footer{
+        width: 100%;
+    }
+  
+
+}
+
+@media only screen and (max-width:760px) {
+    .inputs {
+        padding-left: 0px;
+    }
+
+    header {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (min-width:760px) {
+    .inputs {
+        padding-left: 700px;
+    }
+
+    header {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    body {
+        visibility: hidden;
+    }
+}

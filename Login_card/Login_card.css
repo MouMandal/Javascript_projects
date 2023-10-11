@@ -21,6 +21,7 @@
     background-color: #730228;
     border-radius: 14px;
     box-shadow: 5px 5px 5px 5px black;
+    flex-direction: column;
 
 }
 
@@ -43,7 +44,7 @@
 }
 
 .input-box input {
-
+    width: calc(100% - 30px);
     border: none;
     outline: none;
     background: transparent;
@@ -52,7 +53,7 @@
 }
 
 .input-box img {
-    width: 34px;
+    width: 24px;
     cursor: pointer;
 }
 
@@ -86,4 +87,29 @@
 
 button:hover {
     background-color: #fff;
+}
+
+@media only screen and (min-width:760px) {
+    .card {
+        width: 40%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .card {
+        flex-direction: column;
+
+    }
+}
+
+@media only screen and (max-width:360px) {
+    .card {
+        visibility: hidden;
+
+    }
 }
