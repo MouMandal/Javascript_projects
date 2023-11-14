@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(0, 128, 0, 0.351);
+    background: fixed;
+
+}
+
+
+/*NAVBAR*/
+nav {
+    font-family: sans-serif;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li {
+    padding: 0 12px;
+}
+
+nav ul li:hover {
+    color: green;
+    cursor: pointer;
+}
+
+.img img {
+    width: 55px;
+    padding: 0px 8px;
+
+
+
+}
+
+.img {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.7rem;
+}
+
+/*CONTAINER*/
+.container {
+    background-color: black;
+    min-height: 68vh;
+
+    color: white;
+    display: flex;
+    width: 60%;
+    margin: 23px auto;
+    border-radius: 5px;
+    background-image: url('female.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.container .first h1 {
+    margin-top: 4px;
+
+}
+
+.container .first h1:hover {
+    cursor: pointer;
+    color: green;
+}
+
+.songcontainer {
+    margin-top: 25px;
+}
+
+.songcontainer .songitem {
+
+    width: 104%;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    margin: 6px 0px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+
+.songitem .imges {
+    width: 36px;
+    border-radius: 30px;
+
+
+}
+
+.songitem img {
+    width: 14px;
+    cursor: pointer;
+}
+
+
+/*BANNER*/
+.banner {
+    background-color: black;
+    height: 100px;
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: wheat;
+
+}
+
+.banner #progressbar {
+    width: 100vw;
+    cursor: pointer;
+}
+
+.banner .icons {
+    padding-top: 14px;
+    cursor: pointer;
+
+}
+
+.icons img {
+    max-width: 35px;
+    border-radius: 50px;
+}
+
+
+.banner .gif {
+    position: absolute;
+    left: 27vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gif img {
+    opacity: 0;
+    transform: opacity 0.4s ease-in;
+
+}
+
+.second {
+    background-color: red;
+}
+
+
+
+
+/*RESPONSIVE DESIGN*/
+/*FOR SMART PHONE*/
+@media (max-width:480px) {
+
+    nav ul {
+        font-size: 14px;
+    }
+
+    .container {
+        font-size: 12px;
+    }
+}
+
+/*FOR TABLETS*/
+@media (max-width: 1024px) {
+    .banner #para {
+        position: absolute;
+        padding-right: 35PX;
+        padding-top: 20PX;
+
+    }
+
+    .banner #gifs {
+        position: absolute;
+        margin-left: 30PX;
+        padding-top: 20PX;
+
+    }
+}

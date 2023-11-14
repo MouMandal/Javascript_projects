@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: cursive;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: radial-gradient(circle, #5c0067 0%, #00d4ff 100%);
+
+}
+
+.container .row {
+    background-color: #33006F;
+    height: 80vh;
+    width: 65vw;
+
+}
+
+.notes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 12px;
+    cursor: pointer;
+
+}
+
+.notes img {
+    width: 30px;
+
+}
+
+.notes h1 {
+    font-size: 45px;
+    color: whitesmoke;
+
+}
+
+.create {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.create button {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    padding: 6px 12px;
+    gap: 5px;
+    cursor: pointer;
+    border: none;
+    outline: 0;
+    font-size: 15px;
+
+
+}
+
+.create button:hover {
+    background: transparent;
+    color: white;
+}
+
+.create img {
+    width: 35px;
+    border-radius: 40px;
+
+}
+
+.text {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+.contain1 {
+    position: relative;
+    top: 0;
+    height: 250px;
+    width: 520px;
+    max-height: 100%;
+    max-width: 100%;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    padding-left: 2px;
+    background-color: white;
+    padding-top: 2px;
+
+}
+
+.hideTextInputContainer {
+    display: none;
+}
+
+
+/*FOR DESIGN SUBMIT BUTTON*/
+/* .btn {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn button {
+    padding: 10px 29px;
+    border: none;
+    background-color: #00d4ff;
+    border-radius: 20px;
+}
+
+.butt {
+    display: none;
+} */
+
+@media only screen and (max-width:460px) {
+    .container .row {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .notes h1 {
+        font-size: 25px;
+
+
+    }
+
+    .contain1 {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+}
+
+@media only screen and (max-width:320px) {
+    .container .row {
+        visibility: hidden;
+    }
+}
